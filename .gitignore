@@ -13,3 +13,10 @@ dependency-reduced-pom.xml
 /.settings
 /.classpath
 /.project
+
+.gradle/
+build/
+bin/
+.settings/
+.project
+.classpath

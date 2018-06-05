@@ -1,0 +1,6 @@
+
+description = 'Jsign - Code signing for Windows executables (Core)'
+dependencies {
+    compile group: 'org.bouncycastle', name: 'bcprov-jdk15on', version:'1.58'
+    compile group: 'org.bouncycastle', name: 'bcpkix-jdk15on', version:'1.58'
+}

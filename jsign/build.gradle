@@ -1,0 +1,7 @@
+
+description = 'Jsign - Code signing for Windows executables (Distribution)'
+dependencies {
+  compile project(':jsign-core')
+  compile project(':jsign-ant')
+  compile project(':jsign-cli')
+}

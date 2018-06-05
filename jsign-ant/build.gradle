@@ -1,0 +1,6 @@
+
+description = 'Jsign - Code signing for Windows executables (Ant Task)'
+dependencies {
+  compile project(':jsign-core')
+    compileOnly group: 'org.apache.ant', name: 'ant', version:'1.8.4'
+}

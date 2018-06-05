@@ -1,0 +1,14 @@
+rootProject.name = 'jsign-parent'
+include ':jsign-core'
+include ':jsign-ant'
+include ':jsign-cli'
+include ':jsign'
+include ':jsign-maven-plugin'
+include ':jsign-gradle-plugin'
+
+project(':jsign-core').projectDir = "$rootDir/jsign-core" as File
+project(':jsign-ant').projectDir = "$rootDir/jsign-ant" as File
+project(':jsign-cli').projectDir = "$rootDir/jsign-cli" as File
+project(':jsign').projectDir = "$rootDir/jsign" as File
+project(':jsign-maven-plugin').projectDir = "$rootDir/jsign-maven-plugin" as File
+project(':jsign-gradle-plugin').projectDir = "$rootDir/jsign-gradle-plugin" as File

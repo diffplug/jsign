@@ -1,0 +1,32 @@
+allprojects  {
+  apply plugin: 'maven'
+
+  group = 'net.jsign'
+version = '2.0'
+}
+
+subprojects {
+  apply plugin: 'java'
+  sourceCompatibility = 1.7
+  targetCompatibility = 1.7
+  tasks.withType(JavaCompile) {
+  	options.encoding = 'ISO-8859-1'
+  }
+
+  apply plugin: 'eclipse'
+
+  repositories {
+    mavenLocal()
+    
+    maven { url "http://repo.maven.apache.org/maven2" }
+    maven { url "http://repo.gradle.org/gradle/libs-releases-local" }
+  }
+
+  
+  dependencies {
+    testCompile group: 'junit', name: 'junit', version:'3.8.2'
+    testCompile group: 'commons-io', name: 'commons-io', version:'2.4'
+}
+
+  
+}
